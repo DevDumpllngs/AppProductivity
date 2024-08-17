@@ -1,0 +1,25 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #2D014E;
+    color: #FFFFFF;
+}
+
+.header {
+    background-color: rgba(21, 0, 38, 1);
+}
+
+.section-title {
+    color: #FF4081;
+}
+
+.task-box,
+.productivity-box,
+.chart-box {
+    background-color: rgba(21, 0, 38, 1);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.image-box img.image-content {
+    content: url('gif1.gif');
+}

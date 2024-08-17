@@ -1,0 +1,350 @@
+/* Estilos para los títulos fuera de los cuadros */
+.main-container > div h2,
+.bottom-container > div h2 {
+    margin: 0 0 10px 0;
+    font-size: 24px;
+    color: white;
+}
+
+/* Ajustes de márgenes para los cuadros después de mover los títulos */
+.task-box,
+.productivity-box,
+.chart-box {
+    margin-top: 10px;
+}
+
+/* Ajustes generales (manteniendo los cambios anteriores) */
+.add-task-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.add-task-container input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #420082;
+    color: white;
+}
+
+.add-task-container button {
+    background-color: #6200EA;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.add-task-container button:hover {
+    background-color: #3700B3;
+  }
+
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #2D014E;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.5s ease-in-out; /* agregamos la transición */
+}
+
+/* Estilos para el botón de estilos */
+.theme-button {
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 1;
+  /* Agregamos sombra con filter */
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+  transform: translateY(0);
+  transition: transform 0.2s ease-in-out;
+}
+
+.theme-button:hover {
+  /* Cambiamos la sombra al pasar el mouse por encima */
+  filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.4));
+  transform: translateY(-2px);
+}
+
+.theme-button:active {
+  /* Cambiamos la sombra al presionar el botón */
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.4));
+  transform: translateY(2px);
+}
+
+.header {
+  width: 80%;
+  max-width: 1200px;
+  margin: 20px 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header h1 {
+  font-family: 'Comic Sans MS', cursive;
+}
+
+.icons img {
+  margin-left: 10px;
+}
+
+.icon-button {
+  color: white;
+  font-size: 24px;
+  margin-left: 15px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  align-items: end;
+}
+
+.icon-button:hover {
+  color: #6200EA;
+}
+
+.section-title {
+  color: #FF4081; /* Cambia este color según tu preferencia */
+  font-size: 24px;
+  margin: 0 0 10px 0;
+}
+
+/* Main Container for Image, Tasks, and Productivity */
+.main-container {
+  width: 80%;
+  max-width: 1200px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr; /* Tres columnas iguales */
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+/* Cuadro de Imagen */
+.image-box {
+  width: 100%;
+  height: 200px;
+  background-color: rgba(21, 0, 38, 1);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.image-box img.image-content {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Cuadro de Tareas Pendientes */
+.task-box {
+  background-color: rgba(21, 0, 38, 1);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.task-box ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.task-box li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.task-box input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  background-color: #420082;
+  border: none;
+  border-radius: 3px;
+}
+
+.add-task-container {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.add-task-container input[type="text"] {
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #420082;
+  color: white;
+}
+
+.add-task-container button {
+  background-color: #6200EA;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.add-task-container button:hover {
+  background-color: #3700B3;
+}
+
+/* Cuadro de Productividad */
+.productivity-box {
+  background-color: rgba(21, 0, 38, 1);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.productivity-box ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.productivity-box li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.productivity-box input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  background-color: #420082;
+  border: none;
+  border-radius: 3px;
+}
+
+/* Bottom Container for Chart and Second Image */
+.bottom-container {
+  align-items: center;
+  width: 80%;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+  gap: 20px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+/* Cuadro de Gráfico */
+.chart-box {
+  height: 200px;
+  background-color: rgba(21, 0, 38, 1);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.chart-box h3 {
+  margin-left: 40px;
+}
+
+/* Cuadro de Imagen 2 */
+.image-box:last-child img.image-content {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Hover effect: remove shadow */
+.image-box:hover,
+.task-box:hover,
+.productivity-box:hover,
+.chart-box:hover {
+  box-shadow: none;
+}
+
+.image-box.theme1 img.image-content {
+  content: url('default-image.gif');
+}
+
+:root {
+  --theme-image-url: url('gifblue.gif'); /* Imagen por defecto para el tema 2 */
+}
+
+body.theme2 {
+  background-color: #275d8a;
+  color: #FFFFFF;
+}
+
+.header.theme2 {
+  background-color: rgba(21, 0, 38, 1);
+}
+
+.section-title.theme2 {
+  color: #FF4081;
+}
+
+.task-box.theme2,
+.productivity-box.theme2,
+.chart-box.theme2 {
+  background-color: rgba(21, 0, 38, 1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.image-box.theme2 img.image-content {
+  content: var(--theme-image-url);
+}
+
+/* Estilo para el tema 3 */
+body.theme3 {
+  --theme-image-url: url('gifgreen.gif'); /* Imagen para el tema 3 */
+  background-color: #04792b;
+  color: #FFDC00;
+}
+
+.header.theme3 {
+  background-color: #0074D9;
+}
+
+.section-title.theme3 {
+  color: #01FF70;
+}
+
+.task-box.theme3,
+.productivity-box.theme3,
+.chart-box.theme3 {
+  background-color: #0074D9;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+.image-box.theme3 img.image-content {
+  content: var(--theme-image-url);
+}

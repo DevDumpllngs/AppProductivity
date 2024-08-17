@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevDumplings</title>
+    <link id="style-link" rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+</head>
+<body>
+    <div class="header">
+        <h1>DevDumplings</h1>
+        <div class="header">
+            <a href="www.linkedin.com/in/devdumpllngs" class="icon-button"><i class="fab fa-linkedin"></i></a>
+            <a href="https://mail.google.com/mail/u/2/#inbox" class="icon-button"><i class="fas fa-envelope"></i></a>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <!-- Cuadro 1: Imagen con gif1.gif -->
+        <div class="image-box">
+            <img src="images/gif1.gif" alt="Imagen 1" class="image-content">
+        </div>
+        
+<!-- Cuadro 2: Tareas Pendientes -->
+<div class="task-box">
+    <h2>Tareas Pendientes:</h2>
+    <ul id="task-list">
+        <li>
+            Sitio web de ropa - 28/08 
+            <input type="checkbox" class="task-checkbox">
+        </li>
+        <li>
+            Panel de administrador - 15/09 
+            <input type="checkbox" class="task-checkbox">
+        </li>
+        <li>
+            Reproductor de música con API de Youtube 20/09 
+            <input type="checkbox" class="task-checkbox">
+        </li>
+    </ul>
+    <div class="add-task-container">
+        <input type="text" id="new-task-input" placeholder="Agregar tarea...">
+        <button id="add-task-button">
+            <span>+</span>
+        </button>
+    </div>
+</div>
+
+        <!-- Cuadro 3: Productividad -->
+        <div class="productivity-box">
+            <h2>Productividad</h2>
+            <ul>
+                <li>Estudiar Inglés <input type="checkbox" class="task-checkbox" checked></li>
+                <li>Estudiar JavaScript <input type="checkbox" class="task-checkbox"></li>
+                <li>Estudiar React.js <input type="checkbox" class="task-checkbox"></li>
+                <li>Aprender algo nuevo <input type="checkbox" class="task-checkbox"></li>
+                <li>Tareas de la facultad realizadas <input type="checkbox" class="task-checkbox"></li>
+                <li>Tiempo de descanso <input type="checkbox" class="task-checkbox"></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="bottom-container">
+        <!-- Cuadro 4: Gráfico de Productividad -->
+        <div class="chart-box">
+            <h3>Grafico de Productividad</h3>
+            <canvas id="productivityChart"></canvas> <!-- Aquí se dibuja el gráfico -->
+        </div>
+        
+
+        <!-- Cuadro 5: Imagen con gif2.gif -->
+        <div class="image-box">
+            <img src="images/gif2.gif" alt="Imagen 2" class="image-content">
+        </div>
+    </div>
+
+    <button id="theme-button" class="theme-button">
+        <i class="material-icons">palette</i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
